@@ -24,7 +24,6 @@ file_out.close()
 
 ######################### Pin #########################################
 pin = input("Enter your new Pin:   ")
-pin_str = str(pin)
 hashedPin = SHA256.new(data=bytes(str(pin), 'utf-8'))
 print("hash: ", hashedPin.digest())
 
