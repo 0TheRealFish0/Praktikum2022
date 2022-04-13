@@ -16,10 +16,9 @@ try:
 
     cipher = AES.new(UserInput_hashed.digest(), AES.MODE_GCM, nonce)
     data = cipher.decrypt_and_verify(ciphertext, tag)
-    
-    print("keyA: ", data)
-    print()
 
+    print()
+    
     file_in2 = open("file.bin", "rb")
     nonce2, tag2, ciphertext2 = [ file_in2.read(x) for x in (16, 16, -1) ]
 
