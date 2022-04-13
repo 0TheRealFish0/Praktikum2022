@@ -26,7 +26,7 @@ try:
     cipher2 = AES.new(data, AES.MODE_GCM, nonce2)
     data2 = cipher2.decrypt_and_verify(ciphertext2, tag2)
 
-    print(data2)
+    print(data2.decode("utf-8"))
     print()
     
 

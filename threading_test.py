@@ -41,7 +41,7 @@ def task1(stop_event, arg):
             print()
             print("round: ", n)
             print()
-            print(data2)
+            print(data2.decode("utf-8"))
             print()
             print("--- %s seconds ---" % (time.time() - start_time))
             
@@ -85,7 +85,7 @@ def task2(stop_event, arg):
             print("round: ", n)
             print()
             print()
-            print(data2)
+            print(data2.decode("utf-8"))
             print()
             print("--- %s seconds ---" % (time.time() - start_time))
             
@@ -125,7 +125,7 @@ def task3(stop_event, arg):
             cipher2 = AES.new(data, AES.MODE_GCM, nonce2)
             data2 = cipher2.decrypt_and_verify(ciphertext2, tag2)
             
-            print(data2)
+            print(data2.decode("utf-8"))
             print()
             print("round: ", n)
             print()
@@ -167,7 +167,7 @@ def task4(stop_event, arg):
             cipher2 = AES.new(data, AES.MODE_GCM, nonce2)
             data2 = cipher2.decrypt_and_verify(ciphertext2, tag2)
             
-            print(data2)
+            print(data2.decode("utf-8"))
             print()
             print("round: ", n)
             print()
@@ -211,7 +211,7 @@ def task5(stop_event, arg):
             cipher2 = AES.new(data, AES.MODE_GCM, nonce2)
             data2 = cipher2.decrypt_and_verify(ciphertext2, tag2)
             
-            print(data2)
+            print(data2.decode("utf-8"))
             print()
             print("round: ", n)
             print()
@@ -253,7 +253,7 @@ def task6(stop_event, arg):
             cipher2 = AES.new(data, AES.MODE_GCM, nonce2)
             data2 = cipher2.decrypt_and_verify(ciphertext2, tag2)
             
-            print(data2)
+            print(data2.decode("utf-8"))
             print()
             print("round: ", n)
             print()
