@@ -1,7 +1,7 @@
 from Crypto.Cipher import AES
 from Crypto.Random import get_random_bytes
 from Crypto.Hash import SHA256
-import random
+
 
 
 data = input("Enter your text, you want to be encrypted: ")
@@ -23,7 +23,7 @@ for x in (cipher.nonce, tag, ciphertext):
 file_out.close()
 
 ######################### Pin #########################################
-pin = 166665
+pin = input("Enter your new Pin:   ")
 pin_str = str(pin)
 hashedPin = SHA256.new(data=bytes(str(pin), 'utf-8'))
 print("hash: ", hashedPin.digest())
